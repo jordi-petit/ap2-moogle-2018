@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+
+        <title>µoogle</title>
+
+        <meta charset='utf-8'/>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+        <script type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    </head>
+
+    <body>
+        <br/><br/>
+        <div class='container'>
+
+            <div class='jumbotron' style='padding-top: 12px; padding-bottom: 12px;'>
+                <h1>µoogle</h1>
+                <p>
+                    {{authors}}
+                    <br/>
+                    AP2 · GCED · UPC
+                </p>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <b>Search with µoogle</b>
+                </div>
+                <div class='panel-body' style='padding: 36px;'>
+                    <form class='form text-center' action='/search'>
+                        <p>
+                            <input class='form-control' type='text' name='query' placeholder='Your query' />
+                        </p>
+                        <p>
+                            <input class='btn btn-primary' type='submit' value='Search'/>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
