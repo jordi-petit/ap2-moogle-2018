@@ -8,7 +8,7 @@ The µoogle project for GCED-AP2 (2018 edition)
 This page describes the µoogle project for the AP2 course at GCED. µoogle stands for
 "micro Google" and your task is to implement the core of a simple system to
 crawl web pages and answer queries from users, by reporting which pages
-contain the words they search.
+contain all the words they search.
 
 
 ## Demo
@@ -215,6 +215,7 @@ import pickle
 data = {1:2, 2:3}
 f = open("somefile.dat", "wb")
 pickle.dump(data, f)
+f.close()
 ```
 
 And this code shows how to retrieve it back:
@@ -224,6 +225,7 @@ import pickle
 
 f = open("somefile.dat", "rb")
 data = pickle.load(f)
+f.close()
 ```
 
 
@@ -248,7 +250,7 @@ fitxers per fer funcionar la pràctica. El ZIP ha d'incloure un fitxer
 exemples...) en format
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-El termini de lliurament és fins al dilluns 11 de gener a les 8 del matí
+El termini de lliurament és fins al dilluns 11 de juny a les 8 del matí
 (2018-06-11 08:00 CEST).
 
 
