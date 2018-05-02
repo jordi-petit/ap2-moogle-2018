@@ -228,6 +228,12 @@ data = pickle.load(f)
 f.close()
 ```
 
+# Install Dependencies
+
+```
+pip3 install -r requirements.txt
+```
+
 
 
 # Instruccions
