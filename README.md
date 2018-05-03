@@ -68,7 +68,7 @@ The architecture of the system is as follows:
 
 -   The `crawler.py` module is the command line interface tool that
     is used to crawl the web and index its pages. In order to
-    execute it, use a command such as `./crawler.py --url http://localhost:5000/static/index.html`, which specifies its starting page.
+    execute it, use a command such as `./crawler.py --url http://localhost:5000/static/index.html --maxdist 4`, which specifies a starting page and a maximum crawling distance.
     Use `./crawler.py --help` to get more options.
 
     This module is already implemented, **do not modify it**.
@@ -157,7 +157,17 @@ The `answer.py` module just prettifies this result and outputs it.
 This part already defines a `load(filename)` function that
 reads a database stored in file `filename` using `pickle` and returns it.
 
+### In short:
 
+You have to:
+
+- Implement the `authors()` function (that's easy!!!)
+- Decide which data structure will represent your database 
+- Implement the `crawler()` function
+- Implement the `answer()` function
+- (Also, write a `README.md` file with the documentation of your work)
+
+In order to do this, you possibly want to define types, auxiliary functions...
 
 
 ## The utility module
