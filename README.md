@@ -228,7 +228,9 @@ data = pickle.load(f)
 f.close()
 ```
 
-# Install Dependencies
+# Install dependencies
+
+In order to install the Python libraries you need, please run this command:
 
 ```
 pip3 install -r requirements.txt
