@@ -162,7 +162,7 @@ reads a database stored in file `filename` using `pickle` and returns it.
 You have to:
 
 - Implement the `authors()` function (that's easy!!!)
-- Decide which data structure will represent your database 
+- Decide which data structure will represent your database
 - Implement the `crawler()` function
 - Implement the `answer()` function
 - (Also, write a `README.md` file with the documentation of your work)
@@ -237,6 +237,9 @@ f = open("somefile.dat", "rb")
 data = pickle.load(f)
 f.close()
 ```
+
+You can consider using `urllib.parse.urljoin` to combine URLs.
+
 
 # Install dependencies
 
