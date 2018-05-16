@@ -271,6 +271,13 @@ fitxers per fer funcionar la pràctica. El ZIP ha d'incloure un fitxer
 exemples...) en format
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
+L'ús de tabuladors en el codi queda
+prohibit. 
+A més, es valorarà que el vostre fitxer `moogle.py` segueixi 
+[les regles d'estíl PEP8](https://www.python.org/dev/peps/pep-0008/). Podeu
+utilitzar el paquet `pep8` o http://pep8online.com/ per assegurar-vos
+que seguiu aquestes regles d'estíl. 
+
 El termini de lliurament és fins al dilluns 11 de juny a les 8 del matí
 (2018-06-11 08:00 CEST).
 
