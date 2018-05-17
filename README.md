@@ -238,7 +238,20 @@ data = pickle.load(f)
 f.close()
 ```
 
-You can consider using `urllib.parse.urljoin` to combine URLs.
+You can consider using `urllib.parse.urljoin` to combine absolute and
+relative URLs. Here are some examples:
+
+```python
+>>> import urllib.parse
+>>> urllib.parse.urljoin("https://jutge.org/problems", "P12345.html")
+'https://jutge.org/P12345.html'
+>>> urllib.parse.urljoin("https://jutge.org/problems/", "P12345.html")
+'https://jutge.org/problems/P12345.html'
+>>> urllib.parse.urljoin("https://jutge.org/problems", "../dashboard.html")
+'https://jutge.org/dashboard.html'
+>>> urllib.parse.urljoin("https://jutge.org/problems", "https://google.cat/index.html")
+'https://google.cat/index.html'
+```
 
 
 # Install dependencies
@@ -272,11 +285,11 @@ exemples...) en format
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 L'ús de tabuladors en el codi queda
-prohibit. 
-A més, es valorarà que el vostre fitxer `moogle.py` segueixi 
+prohibit.
+A més, es valorarà que el vostre fitxer `moogle.py` segueixi
 [les regles d'estíl PEP8](https://www.python.org/dev/peps/pep-0008/). Podeu
 utilitzar el paquet `pep8` o http://pep8online.com/ per assegurar-vos
-que seguiu aquestes regles d'estíl. 
+que seguiu aquestes regles d'estíl.
 
 El termini de lliurament és fins al dilluns 11 de juny a les 8 del matí
 (2018-06-11 08:00 CEST).
