@@ -209,11 +209,14 @@ url = "http://localhost:5000/static/index.html"
 response = urllib.request.urlopen(url)
 page = response.read()
 soup = BeautifulSoup(page, "html.parser")
-print(soup.title.string)
+print(soup.title.text)
 print(soup.get_text())
 for link in soup.find_all("a"):
-    print(link.get("href"), link.string)
+    print(link.get("href"), link.text)
 ```
+
+> **Warning!** An older version of this document was using `.string` rather than `.text` in the
+> previous code. Update your code to use `.text`.
 
 The following code snippet show how to save some data
 (whatever its type) into a file
@@ -272,11 +275,11 @@ exemples...) en format
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 L'ús de tabuladors en el codi queda
-prohibit. 
-A més, es valorarà que el vostre fitxer `moogle.py` segueixi 
+prohibit.
+A més, es valorarà que el vostre fitxer `moogle.py` segueixi
 [les regles d'estíl PEP8](https://www.python.org/dev/peps/pep-0008/). Podeu
 utilitzar el paquet `pep8` o http://pep8online.com/ per assegurar-vos
-que seguiu aquestes regles d'estíl. 
+que seguiu aquestes regles d'estíl.
 
 El termini de lliurament és fins al dilluns 11 de juny a les 8 del matí
 (2018-06-11 08:00 CEST).
