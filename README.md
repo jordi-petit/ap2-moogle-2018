@@ -241,7 +241,20 @@ data = pickle.load(f)
 f.close()
 ```
 
-You can consider using `urllib.parse.urljoin` to combine URLs.
+You can consider using `urllib.parse.urljoin` to combine absolute and
+relative URLs. Here are some examples:
+
+```python
+>>> import urllib.parse
+>>> urllib.parse.urljoin("https://jutge.org/problems", "P12345.html")
+'https://jutge.org/P12345.html'
+>>> urllib.parse.urljoin("https://jutge.org/problems/", "P12345.html")
+'https://jutge.org/problems/P12345.html'
+>>> urllib.parse.urljoin("https://jutge.org/problems", "../dashboard.html")
+'https://jutge.org/dashboard.html'
+>>> urllib.parse.urljoin("https://jutge.org/problems", "https://google.cat/index.html")
+'https://google.cat/index.html'
+```
 
 
 # Install dependencies
