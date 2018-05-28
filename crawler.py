@@ -13,7 +13,7 @@ def main():
         epilog=moogle.authors(),
     )
 
-    parser.add_argument("-u", "--url", type=str, help="starting url", default=5)
+    parser.add_argument("-u", "--url", type=str, help="starting url")
     parser.add_argument("-m", "--maxdist", type=int, help="maximum distance", default=5)
     parser.add_argument("-d", "--database", type=str, help="filename of the database", default="moogle.dat")
 
