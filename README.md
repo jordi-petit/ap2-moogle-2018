@@ -279,10 +279,16 @@ què ha fet l'altre membre.
 
 ## Lliurament
 
-Heu de lliurar la vostra pràctica per correu electrònic al professor Jordi
+~~Heu de lliurar la vostra pràctica per correu electrònic al professor Jordi
 Petit des del vostre compte oficial. El missatge ha de tenir el Tema
 (*Subject*) `Lliurament moogle` i ha de contenir un arxiu ZIP amb tots els
-fitxers per fer funcionar la pràctica. El ZIP ha d'incloure un fitxer
+fitxers per fer funcionar la pràctica. ~~
+
+Heu de lliurar la pràctica des de l'apartat "Pràctiques" del Racó.
+El lliurament només l'ha de fer un estudiant per equip i ha de contenir un arxiu ZIP amb tots els
+fitxers per fer funcionar la pràctica.
+
+El ZIP ha d'incloure un fitxer
 `README.md` amb tota la vostra documentació  (disseny, extres, instruccions,
 exemples...) en format
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
