@@ -281,7 +281,7 @@ què ha fet l'altre membre.
 
 Heu de lliurar la pràctica des de l'apartat "Pràctiques" del Racó.
 El lliurament només l'ha de fer un estudiant per equip i ha de contenir un arxiu ZIP amb tots els
-fitxers per fer funcionar la pràctica.
+fitxers per fer funcionar la pràctica, però sense `moogle.dat`.
 
 El ZIP ha d'incloure un fitxer
 `README.md` amb tota la vostra documentació  (disseny, extres, instruccions,
